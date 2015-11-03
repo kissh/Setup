@@ -3,4 +3,5 @@ Integrantes del grupo:
 2.Cristian Enrique Pardo
 3.Juan Sebastian Monroy Valbuena
 
-# Seq
+Para ejecutar el programa es necesario intalar la librería Control p5.
+Link de descarga: http://www.sojamo.de/libraries/controlP5
