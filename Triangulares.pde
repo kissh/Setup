@@ -1,9 +1,9 @@
 class Triangulares extends Sequence { 
   String author(){
-  return  "Pit\u00e1goras";   
+  return  "Pitae1goras";   
   } 
    String description(){
-      return  "los n\u00fameros";
+      return  "los numeros";
   }    
    int compute (int n){
      println((n*(n+1))/2);
@@ -20,12 +20,14 @@ class Triangulares extends Sequence {
     return Arrays.toString(toArray(n)); 
   }   
   void display (int n){
+      fill(255-n);
+  text(this.author()+": "+this.description(),250,40,500,200);
+  fill(255-10*n);
     int y=685;
     int x=15;
     int s=n;
     for(int i=0;i<n;i++){
       for(int j=0;j<s;j++){
-         rectMode(CENTER); 
          ellipse(x,y,20,20); 
          x=x+20;              
        }  
@@ -36,4 +38,27 @@ class Triangulares extends Sequence {
 
         
    } 
+   
+   void barChart(int n){
+   smooth();
+    colorMode(RGB,100);
+    fill(90);
+    rectMode(CORNERS);
+    background(100);
+    noStroke();
+    rect(20, 20, width - 20, height - 20);
+    rectMode(CORNER);
+    for(int i=1; i<190; i++){
+    fill(0);
+    rect(20+(i*4), height-20, 3,-(this.compute(i))*2);
+  
+    
+  }
+  
+void lineChart(int n){
+  
+  }
+void curveFitting(int n){
+  
+  }
  }
