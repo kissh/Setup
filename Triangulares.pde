@@ -54,7 +54,7 @@ class Triangulares extends Sequence {
   
     
   }
-  
+  }
 void lineChart(int n){
   
   }
